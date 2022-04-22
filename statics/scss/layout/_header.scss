@@ -1,0 +1,208 @@
+.bota_header {
+   &_top{
+    background: #00004F;
+   }
+    &_right > ul {
+        display: flex;
+        justify-content: flex-end;
+      
+        > li {
+            position: relative;
+            > a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                color: #fff;
+                display: block;
+                padding: 7.5px 15px;
+              }
+            .bota_header_language_ul {
+                right: 0;
+                margin: 0;
+                top: 100%;
+                z-index: 9999;
+                display: none;
+                min-width: 130px;
+                text-align: left;
+                padding: 10px 15px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 3px;
+                -ms-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -o-border-radius: 3px;
+                -webkit-box-shadow: 0 3px 6px 0 rgba(18, 22, 25, 0.16);
+                -ms-box-shadow: 0 3px 6px 0 rgba(18, 22, 25, 0.16);
+                -o-box-shadow: 0 3px 6px 0 rgba(18, 22, 25, 0.16);
+                -moz-box-shadow: 0 3px 6px 0 rgba(18, 22, 25, 0.16);
+                box-shadow: 0 3px 6px 0 rgba(18, 22, 25, 0.16);
+              
+                li {
+                    margin-bottom: 5px;
+                    &.active{
+                        a{
+                            &::before{
+                                content: "";
+                                background-size: 10px;
+                                background-repeat: no-repeat;
+                                background-position: left center;
+                                background-image: url(../imgs/check-mark.svg);
+                                width: 16px;
+                                height: 11px;
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    a {
+                    padding-left: 15px;
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 14px;
+                    position: relative;
+                        &:hover{
+                            color: #00004F;
+                        }
+                    }
+                }
+              }
+              &:hover .bota_header_language_ul{
+                  display: block;
+              }
+        }
+      }
+      &_center{
+        background: #FFFFFF;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+      }
+      &_menu {
+        position: relative;
+        
+      
+        &_ul {
+          display: flex;
+          flex-wrap: wrap;
+      
+          > li {
+            > a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 18px;
+              color: #252B3A;
+              padding: 21px 0;
+              display: block;
+              position: relative;
+      
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background: #0052CC;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+              }
+            }
+      
+            padding: 0 10px;
+      
+            &:hover > a:after {
+              width: 100%;
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+      &_center_right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      
+        .bota_header_search {
+          position: relative;
+      
+          input {
+            background: #FFFFFF;
+            border: 1px solid #D4DADD;
+            border-radius: 2px;
+            height: 30px;
+            padding: 0 12px;
+            font-size: 12px;
+            outline: none;
+            padding-right: 25px;
+            transition: all 0.5s ease;
+            &::placeholder{
+                color: #D4DADD;
+            }
+            &:focus {
+                border-color: #252B3A;
+                &::placeholder{
+                    color: #252B3A;
+                }
+              }
+          }
+      
+          button {
+            position: absolute;
+            right: 0;
+            border: none;
+            background: none;
+            height: 24px;
+            top: 50%;
+            padding: 0 5px;
+            transform: translateY(-50%);
+          }
+      
+          
+        }
+      }
+      
+      .bota_header_login {
+        display: flex;
+        margin-left: 15px;
+      
+        > ul {
+          display: flex;
+          align-items: center;
+      
+          > li {
+            > a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              color: #252B3A;
+              transition: all 0.5s ease;
+            }
+      
+            &.registration > a {
+              background: #0052CC;
+              color: #fff;
+              padding: 5px 21px;
+              border-radius: 2px;
+            }
+      
+            padding: 0 7.5px;
+      
+            &:hover > a {
+              color: #1372FF;
+            }
+      
+            &.registration > a:hover {
+              background: #1372FF;
+              color: #fff;
+            }
+          }
+        }
+      }
+}
