@@ -1,0 +1,374 @@
+.bota_home_product {
+    padding: 65px 0 53px;
+    overflow: hidden;
+    background: #F1F2F6;
+    .bota_home_product_content {
+        display: flex;
+      
+        .nav {
+          border-left: 1px solid #dfe1e6;
+          flex: 0 0 209px;
+          min-height: 580px;
+          max-width: 209px;
+      
+          a {
+            height: 40px;
+            -webkit-transition: .2s;
+            transition: .2s;
+            border: none;
+            border-radius: unset;
+            position: relative;
+            padding: 0 0 0 28px;
+            font-style: normal;
+            font-size: 14px;
+            color: #252B3A;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+      
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 3px;
+              background: #0052CC;
+              opacity: 0;
+              height: 40px;
+              -webkit-transition: .2s;
+              transition: .2s;
+            }
+      
+            &.active:before, &:hover:before {
+              opacity: 1;
+            }
+      
+            &.active, &:hover {
+              font-weight: 600;
+              background: none;
+              color: #252B3A;
+            }
+          }
+        }
+      
+        .tab-content {
+          position: relative;
+          width: calc(100% - 255px);
+          height: 580px;
+          margin-left: 46px;
+        }
+      
+        .nav a > svg {
+          margin-left: 10px;
+        }
+      }
+      .bota_product_serice_col {padding-left: 10px;padding-right: 10px;}
+
+      .bota_product_serice_row {margin-left: -10px;margin-right: -10px;}
+      .bota_product_serice_item {
+        background: #FFFFFF;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+        transition: .2s;
+        &:hover {
+            box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.15);
+          
+            h5 {
+              color: #0052CC;
+            }
+            .bota_product_serice_readmore{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+          }
+          
+      }
+      .bota_product_serice_readmore {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #fff;
+        background: #0052CC;
+        border-radius: 2px;
+        height: 28px;
+        line-height: 28px;
+        position: absolute;
+        bottom: 15px;
+        width: 85%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s;
+        transform: translateY(40px);
+      
+        &:hover {
+          background: #1372FF;
+          box-shadow: 0px 3px 5px rgba(19, 114, 255, 0.5);
+        }
+      }
+      .bota_product_serice_link {
+        display: flex;
+        height: 274px;
+        background-position: 50%;
+        -webkit-transition: .2s;
+        transition: .2s;
+        flex-direction: column;
+        padding: 15px 19px;
+        background: #fff;
+        text-align: center;
+        position: relative;
+      
+        img {
+          width: 36px;
+          height: 36px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+        h5 {
+          font-weight: 600;
+          font-size: 16px;
+          color: #252B3A;
+          letter-spacing: 0;
+          line-height: 24px;
+          height: 24px;
+          margin-top: 15px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          line-clamp: 1;
+          -webkit-box-orient: vertical;
+          margin-bottom: 15px;
+        }
+      }
+      
+      .bota_product_serice_descrpition {
+        margin-top: 4px;
+        font-size: 14px;
+        color: #575d6c;
+        letter-spacing: 0;
+        line-height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        -webkit-box-orient: vertical;
+        max-height: 120px;
+      }
+      .bota_product_serice_img_col {
+        position: static;
+      }
+      
+      .bota_product_serice_img {
+        position: absolute;
+        right: -18%;
+        border: 12px solid #575D6C;
+        border-right: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      
+        img {
+          max-height: 547px;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+        }
+      }
+  }
+  .bota_customers_home {
+    position: relative;
+    padding: 38px 0;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    color: #fff;
+    .bota_customers_bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-position: top;
+        -webkit-animation: fadeIn .4s forwards;
+        animation: fadeIn .4s forwards;
+        background-repeat: no-repeat;
+        &::before{
+            content: "";
+            background: linear-gradient(100.34deg, #000000 -20.79%, rgba(0, 0, 0, 0) 118.43%);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    
+    .container{
+        position: relative;
+    }
+  
+    .bota_title_main h2 {
+      color: #fff;
+      margin-bottom: 7px;
+    }
+  
+    .nav-tabs {
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
+      justify-content: space-between;
+  
+      a {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        -webkit-transition: color .2s;
+        transition: color .2s;
+        font-weight: 400;
+        pointer-events: auto;
+        color: #ADB0B8;
+        font-size: 16px;
+        border: none;
+        background: none;
+        font-weight: 500;
+        padding: 0;
+        padding-bottom: 15px;
+  
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 0;
+          height: 3px;
+          margin: auto;
+          background-color: #FF7E3D;
+          opacity: 0;
+          -webkit-transition: width .2s,opacity 0s .2s;
+          transition: width .2s,opacity 0s .2s;
+        }
+  
+        &.active {
+          &:after {
+            width: 100%;
+            opacity: 1;
+            -webkit-transition: width .2s;
+            transition: width .2s;
+          }
+  
+          background: none;
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+    .bota_customers_texts {
+        display: flex;
+        padding-top: 64px;
+        height: 428px;
+        align-items: center;
+      
+        .bota_customers_text_item {
+          max-width: 945px;
+      
+          .bota_customers_icon {
+            margin-bottom: 24px;
+            width: 140px;
+            height: 60px;
+          }
+      
+          .bota_customers_text_title {
+            font-weight: 700;
+            margin-bottom: 12px;
+            opacity: 0;
+            -webkit-animation: textIn .4s forwards;
+            animation: textIn .4s forwards;
+            color: #fff;
+          }
+      
+          .bota_customers_text_desc {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 16px;
+            opacity: 0;
+            -webkit-animation: textIn .4s .1s forwards;
+            animation: textIn .4s .1s forwards;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+          }
+      
+          .bota_customers_text_btn {
+            display: inline-block;
+            background: transparent;
+            outline: none;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-transition: .2s;
+            transition: .2s;
+            cursor: pointer;
+            height: 40px;
+            font-size: 14px;
+            line-height: 38px;
+            border-radius: 2px;
+            padding-left: 32px;
+            padding-right: 32px;
+            background-color: #FF7E3D;
+            border-color: #FF7E3D;
+            margin-top: 30px;
+            opacity: 0;
+            -webkit-animation: textIn .4s .15s forwards;
+            animation: textIn .4s .15s forwards;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+          }
+      
+          .bota_customers_text_title > span {
+            max-width: 100%;
+            font-size: 24px;
+            line-height: 34px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+          }
+      
+          .bota_customers_text_btn:hover {
+            background: #FF5500;
+            box-shadow: 0px 4px 10px rgba(255, 85, 0, 0.5);
+          }
+        }
+      }
+  }
+  @keyframes textIn {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    to {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}

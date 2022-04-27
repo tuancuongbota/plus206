@@ -55,6 +55,31 @@ a { -webkit-transition: all ease 0.2s; -o-transition: all ease 0.2s; transition:
 a, img, label, li, span { text-decoration: none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 @media (min-width: 1200px) { .container { max-width: 1263px; } }
+.bota_block_slideshow { position: relative; }
+.bota_block_slideshow .bota_block_slideshow_item { position: relative; min-height: 490px; max-width: 1600px; margin-left: auto; margin-right: auto; }
+.bota_block_slideshow .bota_block_slideshow_item .bota_block_slideshow_img { position: absolute; right: 0; top: 0; width: 100%; height: 100%; background-repeat: no-repeat; max-width: 60%; z-index: 9; background-size: 100%; transition-timing-function: ease-out; transition-duration: 700ms !important; }
+.bota_block_slideshow .bota_block_slideshow_item .bota_block_slideshow_img:hover { transform: rotate(2deg); }
+.bota_block_slideshow .bota_block_slideshow_item .bota_block_slideshow_col { position: static; }
+.bota_block_slideshow .bota_block_slideshow_item::before { content: ""; background-image: url(../imgs/bg-banner.svg); background-repeat: no-repeat; width: 100%; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: contain; background-position: center; z-index: -1; }
+.bota_block_slideshow .bota_block_slideshow_item .bota_block_slideshow_content { max-width: 470px; padding-top: 107px; }
+.bota_block_slideshow .bota_block_slideshow_item .bota_block_slideshow_content h3 { font-style: normal; font-weight: 600; font-size: 52px; color: #575D6C; margin-bottom: 30px; line-height: 1; opacity: 0; -webkit-transform: translateY(40px); transform: translateY(40px); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; transition: .6s ease-out .1s; }
+.bota_block_slideshow .bota_block_slideshow_description { font-style: normal; font-weight: 400; font-size: 16px; color: #575D6C; margin-bottom: 40px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; opacity: 0; -webkit-transform: translateY(40px); transform: translateY(40px); transition: .6s ease-out .1s; }
+.bota_block_slideshow .bota_block_slideshow_link { display: inline-block; opacity: 0; -webkit-transform: translateY(40px); transform: translateY(40px); transition: .6s ease-out .1s; }
+.bota_block_slideshow .bota_block_slideshow_link a { border: 1px solid #252B3A; border-radius: 2px; display: inline-block; font-style: normal; font-weight: 400; font-size: 14px; line-height: 40px; color: #252B3A; padding: 0px 14px; height: 40px; }
+.bota_block_slideshow .bota_block_slideshow_link:hover a { border-color: #0052CC; color: #0052CC; }
+.bota_block_slideshow .slick-current .bota_block_slideshow_item .bota_block_slideshow_content h3, .bota_block_slideshow .slick-current .bota_block_slideshow_item .bota_block_slideshow_description, .bota_block_slideshow .slick-current .bota_block_slideshow_item .bota_block_slideshow_link { opacity: 1; transform: translateY(0); }
+.bota_block_slideshow .slick-dots { position: absolute; bottom: 105px; display: flex; justify-content: center; left: 0; right: 0; }
+.bota_block_slideshow .slick-dots li { border: none; font-size: 0; background: #ADB0B8; height: 2px; width: 40px; margin: 0 5px; padding: 0; }
+.bota_block_slideshow .slick-dots li button { display: none; }
+.bota_block_slideshow .slick-dots li.slick-active { background: #0052CC; }
+
+.bota_events_container { backdrop-filter: blur(15px); width: 100%; height: 90px; z-index: 99; position: absolute; bottom: 0; background: linear-gradient(90.17deg, #FFFFFF -190.62%, rgba(255, 255, 255, 0.28) 167.36%); }
+.bota_events_container .container { justify-content: space-between; display: flex; }
+.bota_events_container .container .bota_event_item { max-width: 25%; padding: 0 24px; display: flex; transition: all .2s; height: 90px; }
+.bota_events_container .container .bota_event_item .bota_event_content { display: flex; flex-flow: column; justify-content: center; }
+.bota_events_container .container .bota_event_item .bota_event_content .bota_event_title { text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px; line-height: 22px; margin-bottom: 4px; transition: all .2s; height: 24px; color: #252B3A; font-weight: 600; }
+.bota_events_container .container .bota_event_item .bota_event_content .bota_event_desc { color: #575D6C; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; height: 20px; line-height: 20px; width: 100%; margin: 0; }
+
 .bota_header_top { background: #00004F; }
 .bota_header_right > ul { display: flex; justify-content: flex-end; }
 .bota_header_right > ul > li { position: relative; }
@@ -82,7 +107,7 @@ a, img, label, li, span { text-decoration: none; -webkit-tap-highlight-color: rg
 .bota_header .bota_header_login { display: flex; margin-left: 15px; }
 .bota_header .bota_header_login > ul { display: flex; align-items: center; }
 .bota_header .bota_header_login > ul > li { padding: 0 7.5px; }
-.bota_header .bota_header_login > ul > li > a { font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px; color: #252B3A; transition: all 0.5s ease; }
+.bota_header .bota_header_login > ul > li > a { font-style: normal; font-weight: 400; font-size: 14px; line-height: 17px; color: #252B3A; transition: all 0.5s ease; white-space: nowrap; }
 .bota_header .bota_header_login > ul > li.registration > a { background: #0052CC; color: #fff; padding: 5px 21px; border-radius: 2px; }
 .bota_header .bota_header_login > ul > li:hover > a { color: #1372FF; }
 .bota_header .bota_header_login > ul > li.registration > a:hover { background: #1372FF; color: #fff; }
@@ -96,5 +121,78 @@ img { max-width: 100%; }
 ul li { list-style: none; }
 
 ul { padding: 0; margin: 0; }
+
+.bota_title_main { text-align: center; margin-bottom: 53px; }
+.bota_title_main h2 { font-style: normal; font-weight: 600; font-size: 30px; color: #252B3A; margin-bottom: 15px; }
+.bota_title_main .bota_description_main { font-style: normal; font-weight: 400; font-size: 15px; }
+
+.bota_solution_home { padding: 65px 0; }
+.bota_solution_home .bota_solutions_list ul li { padding-left: 10px; padding-right: 10px; }
+.bota_solution_home .bota_solutions_list ul li:nth-child(6) .bota_solutions_card_text { top: 212px; }
+.bota_solution_home .bota_solutions_list ul li:nth-child(6):hover .bota_solutions_card_text { top: 97px; }
+.bota_solution_home .bota_title_main { margin-bottom: 41px; }
+
+.bota_solutions_card { display: flex; flex-direction: column-reverse; position: relative; height: 306px; overflow: hidden; color: #fff; user-select: none; -webkit-user-drag: none; border-radius: 2px; margin-bottom: 20px; }
+.bota_solutions_card .bota_solutions_card_cover, .bota_solutions_card .bota_solutions_card_cover_modal { position: absolute; top: 0; right: 0; bottom: 0; left: 0; -webkit-transition: .65s; transition: .65s; }
+.bota_solutions_card .bota_solutions_card_cover { background-size: cover; background-position: 0; }
+.bota_solutions_card:hover .bota_solutions_card_cover { -webkit-filter: blur(6px); filter: blur(6px); }
+.bota_solutions_card:hover .bota_solutions_card_cover_modal { background: rgba(0, 0, 0, 0.46); }
+.bota_solutions_card:hover .bota_solutions_card_text { top: 111px; }
+
+.bota_solutions_card_text { position: absolute; bottom: 32px; left: 32px; right: 32px; overflow: hidden; transition: .65s; top: 243px; }
+.bota_solutions_card_text .bota_solutions_card_title { position: relative; font-size: 24px; line-height: 28px; font-weight: 600; margin-bottom: 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; transition: .65s; }
+.bota_solutions_card_text .bota_solutions_card_desc { position: relative; font-size: 14px; line-height: 22px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; line-clamp: 5; -webkit-box-orient: vertical; color: #fff; margin-top: 15px; }
+
+.bota_home_product { padding: 65px 0 53px; overflow: hidden; background: #F1F2F6; }
+.bota_home_product .bota_home_product_content { display: flex; }
+.bota_home_product .bota_home_product_content .nav { border-left: 1px solid #dfe1e6; flex: 0 0 209px; min-height: 580px; max-width: 209px; }
+.bota_home_product .bota_home_product_content .nav a { height: 40px; -webkit-transition: .2s; transition: .2s; border: none; border-radius: unset; position: relative; padding: 0 0 0 28px; font-style: normal; font-size: 14px; color: #252B3A; display: flex; align-items: center; margin-bottom: 20px; }
+.bota_home_product .bota_home_product_content .nav a:last-child { margin-bottom: 0; }
+.bota_home_product .bota_home_product_content .nav a:before { content: ""; position: absolute; left: 0; top: 0; width: 3px; background: #0052CC; opacity: 0; height: 40px; -webkit-transition: .2s; transition: .2s; }
+.bota_home_product .bota_home_product_content .nav a.active:before, .bota_home_product .bota_home_product_content .nav a:hover:before { opacity: 1; }
+.bota_home_product .bota_home_product_content .nav a.active, .bota_home_product .bota_home_product_content .nav a:hover { font-weight: 600; background: none; color: #252B3A; }
+.bota_home_product .bota_home_product_content .tab-content { position: relative; width: calc(100% - 255px); height: 580px; margin-left: 46px; }
+.bota_home_product .bota_home_product_content .nav a > svg { margin-left: 10px; }
+.bota_home_product .bota_product_serice_col { padding-left: 10px; padding-right: 10px; }
+.bota_home_product .bota_product_serice_row { margin-left: -10px; margin-right: -10px; }
+.bota_home_product .bota_product_serice_item { background: #FFFFFF; box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05); margin-bottom: 20px; transition: .2s; }
+.bota_home_product .bota_product_serice_item:hover { box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.15); }
+.bota_home_product .bota_product_serice_item:hover h5 { color: #0052CC; }
+.bota_home_product .bota_product_serice_item:hover .bota_product_serice_readmore { opacity: 1; visibility: visible; transform: translateY(0px); }
+.bota_home_product .bota_product_serice_readmore { font-style: normal; font-weight: 500; font-size: 12px; color: #fff; background: #0052CC; border-radius: 2px; height: 28px; line-height: 28px; position: absolute; bottom: 15px; width: 85%; left: 0; right: 0; margin: auto; opacity: 0; visibility: hidden; transition: .2s; transform: translateY(40px); }
+.bota_home_product .bota_product_serice_readmore:hover { background: #1372FF; box-shadow: 0px 3px 5px rgba(19, 114, 255, 0.5); }
+.bota_home_product .bota_product_serice_link { display: flex; height: 274px; background-position: 50%; -webkit-transition: .2s; transition: .2s; flex-direction: column; padding: 15px 19px; background: #fff; text-align: center; position: relative; }
+.bota_home_product .bota_product_serice_link img { width: 36px; height: 36px; margin-left: auto; margin-right: auto; }
+.bota_home_product .bota_product_serice_link h5 { font-weight: 600; font-size: 16px; color: #252B3A; letter-spacing: 0; line-height: 24px; height: 24px; margin-top: 15px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; line-clamp: 1; -webkit-box-orient: vertical; margin-bottom: 15px; }
+.bota_home_product .bota_product_serice_descrpition { margin-top: 4px; font-size: 14px; color: #575d6c; letter-spacing: 0; line-height: 18px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; line-clamp: 5; -webkit-box-orient: vertical; max-height: 120px; }
+.bota_home_product .bota_product_serice_img_col { position: static; }
+.bota_home_product .bota_product_serice_img { position: absolute; right: -18%; border: 12px solid #575D6C; border-right: none; border-top-left-radius: 30px; border-bottom-left-radius: 30px; }
+.bota_home_product .bota_product_serice_img img { max-height: 547px; border-top-left-radius: 15px; border-bottom-left-radius: 15px; }
+
+.bota_customers_home { position: relative; padding: 38px 0; background-size: cover !important; background-repeat: no-repeat; color: #fff; }
+.bota_customers_home .bota_customers_bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-size: cover; background-position: top; -webkit-animation: fadeIn .4s forwards; animation: fadeIn .4s forwards; background-repeat: no-repeat; }
+.bota_customers_home .bota_customers_bg::before { content: ""; background: linear-gradient(100.34deg, #000000 -20.79%, rgba(0, 0, 0, 0) 118.43%); width: 100%; height: 100%; position: absolute; top: 0; right: 0; left: 0; bottom: 0; }
+.bota_customers_home .container { position: relative; }
+.bota_customers_home .bota_title_main h2 { color: #fff; margin-bottom: 7px; }
+.bota_customers_home .nav-tabs { border-bottom: 1px solid rgba(255, 255, 255, 0.4); justify-content: space-between; }
+.bota_customers_home .nav-tabs a { display: inline-block; position: relative; cursor: pointer; -webkit-transition: color .2s; transition: color .2s; font-weight: 400; pointer-events: auto; color: #ADB0B8; font-size: 16px; border: none; background: none; font-weight: 500; padding: 0; padding-bottom: 15px; }
+.bota_customers_home .nav-tabs a:after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; width: 0; height: 3px; margin: auto; background-color: #FF7E3D; opacity: 0; -webkit-transition: width .2s,opacity 0s .2s; transition: width .2s,opacity 0s .2s; }
+.bota_customers_home .nav-tabs a.active { background: none; color: #fff; font-weight: 600; }
+.bota_customers_home .nav-tabs a.active:after { width: 100%; opacity: 1; -webkit-transition: width .2s; transition: width .2s; }
+.bota_customers_home .bota_customers_texts { display: flex; padding-top: 64px; height: 428px; align-items: center; }
+.bota_customers_home .bota_customers_texts .bota_customers_text_item { max-width: 945px; }
+.bota_customers_home .bota_customers_texts .bota_customers_text_item .bota_customers_icon { margin-bottom: 24px; width: 140px; height: 60px; }
+.bota_customers_home .bota_customers_texts .bota_customers_text_item .bota_customers_text_title { font-weight: 700; margin-bottom: 12px; opacity: 0; -webkit-animation: textIn .4s forwards; animation: textIn .4s forwards; color: #fff; }
+.bota_customers_home .bota_customers_texts .bota_customers_text_item .bota_customers_text_desc { font-size: 14px; line-height: 24px; margin-bottom: 16px; opacity: 0; -webkit-animation: textIn .4s .1s forwards; animation: textIn .4s .1s forwards; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
+.bota_customers_home .bota_customers_texts .bota_customers_text_item .bota_customers_text_btn { display: inline-block; background: transparent; outline: none; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-transition: .2s; transition: .2s; cursor: pointer; height: 40px; font-size: 14px; line-height: 38px; border-radius: 2px; padding-left: 32px; padding-right: 32px; background-color: #FF7E3D; border-color: #FF7E3D; margin-top: 30px; opacity: 0; -webkit-animation: textIn .4s .15s forwards; animation: textIn .4s .15s forwards; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #fff; }
+.bota_customers_home .bota_customers_texts .bota_customers_text_item .bota_customers_text_title > span { max-width: 100%; font-size: 24px; line-height: 34px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.bota_customers_home .bota_customers_texts .bota_customers_text_item .bota_customers_text_btn:hover { background: #FF5500; box-shadow: 0px 4px 10px rgba(255, 85, 0, 0.5); }
+
+@keyframes textIn { 0% { -webkit-transform: translateY(50px); transform: translateY(50px); opacity: 0; }
+  to { -webkit-transform: translate(0); transform: translate(0); opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% { opacity: 0; }
+  to { opacity: 1; } }
+@keyframes fadeIn { 0% { opacity: 0; }
+  to { opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */

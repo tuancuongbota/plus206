@@ -24,3 +24,127 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+
+.bota_title_main {
+  text-align: center;
+  margin-bottom: 53px;
+
+  h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #252B3A;
+    margin-bottom: 15px;
+  }
+  .bota_description_main {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+
+.bota_solution_home {
+  padding: 65px 0;
+  .bota_solutions_list{
+    ul {
+      li{
+        padding-left: 10px;
+        padding-right: 10px;
+        &:nth-child(6){
+          .bota_solutions_card_text{
+            top: 212px;
+          }
+          &:hover{
+            .bota_solutions_card_text{
+              top: 97px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bota_title_main {
+    margin-bottom: 41px;
+  }
+}
+
+.bota_solutions_card {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  height: 306px;
+  overflow: hidden;
+  color: #fff;
+  user-select: none;
+  -webkit-user-drag: none;
+  border-radius: 2px;
+  margin-bottom: 20px;
+
+  .bota_solutions_card_cover, .bota_solutions_card_cover_modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: .65s;
+    transition: .65s;
+  }
+
+  .bota_solutions_card_cover {
+    background-size: cover;
+    background-position: 0;
+  }
+  &:hover {
+    .bota_solutions_card_cover {
+      -webkit-filter: blur(6px);
+      filter: blur(6px);
+    }
+  
+    .bota_solutions_card_cover_modal {
+      background: rgba(0, 0, 0, 0.46);
+    }
+  
+    .bota_solutions_card_text {
+     top: 111px;
+    }
+  }
+}
+
+.bota_solutions_card_text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  right: 32px;
+  overflow: hidden;
+  transition: .65s;
+  top: 243px;
+
+  .bota_solutions_card_title {
+    position: relative;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    transition: .65s;
+  }
+  .bota_solutions_card_desc {
+    position: relative;
+    font-size: 14px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    color: #fff;
+    margin-top: 15px;
+}
+}
