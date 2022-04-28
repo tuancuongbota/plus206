@@ -25,7 +25,12 @@ ul {
   margin: 0;
 }
 
-
+.bota_body_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .bota_title_main {
   text-align: center;
   margin-bottom: 53px;
@@ -147,4 +152,258 @@ ul {
     color: #fff;
     margin-top: 15px;
 }
+}
+.bota_global_site_home {
+  padding: 68px 0 76px;
+}
+
+.bota_global_site_intro_title {
+  font-size: 24px;
+  color: #252b3a;
+  line-height: 30px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.bota_global_site_intro_desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  color: #252B3A;
+  margin-bottom: 22px;
+}
+
+.bota_global_site_intro_link {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  line-height: 40px;
+  margin-top: 16px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background: #0052CC;
+  border-radius: 2px;
+  height: 40px;
+  padding: 0 17px;
+
+  &:hover {
+    background: #1372FF;
+    box-shadow: 0px 4px 5px rgba(19, 114, 255, 0.5);
+    color: #fff;
+  }
+}
+
+.bota_global_site_data {
+  flex-wrap: wrap;
+  margin-top: 57px;
+  display: flex;
+
+  .bota_global_site_text {
+    width: 50%;
+    margin: 32px 0;
+
+    .title {
+      height: 60px;
+      line-height: 60px;
+      font-size: 48px;
+      color: #252B3A;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover{
+        color: #0052CC;
+      }
+    }
+
+    .desc {
+      height: 22px;
+      line-height: 22px;
+      font-size: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #575D6C;
+      margin-top: 8px;
+    }
+  }
+}
+.bota_section_body_bottom {
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  height: 180px;
+  padding: 10px 55px;
+
+  .bota_safety_card_item {
+    .bota_safety_card {
+      display: block;
+      width: 157px;
+      height: 160px;
+      padding-top: 16px;
+      -webkit-transition: .2s;
+      transition: .2s;
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #252b3a;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    
+      .bota_safety_card_icon img {
+        width: 92px;
+        height: 92px;
+        object-fit: scale-down;
+        margin: auto;
+      }
+    }
+    
+    .bota_safety_card_icon {
+      margin: 0 auto 10px;
+    }
+  }
+}
+.bota_section_body_left{
+  height: 630px;
+}
+.bota_home_support {
+  padding: 94px 0 46px;
+  .bota_home_support_item_icon {
+    display: flex;
+    align-items: center;
+  
+    img {
+      margin-right: 15px;
+    }
+  }
+}
+
+.bota_home_support_title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #252b3a;
+}
+
+.bota_home_support_desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #575d6c;
+  margin-top: 8px;
+}
+
+.bota_home_support_btn {
+  margin-top: 20px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: #0052CC;
+  border-radius: 3px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #fff;
+  display: inline-block;
+
+  &:hover {
+    background: #1372FF;
+    box-shadow: 0px 4px 10px rgba(19, 114, 255, 0.5);
+    color: #fff;
+  }
+}
+
+.bota_support_wrapper_right {
+  border-left: 1px solid #ddd;
+  padding-left: 50px;
+  display: flex;
+
+.bota_home_support_item_desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #575D6C;
+  margin-top: 2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.bota_home_support_item {
+  width: calc(50% - 20px);
+
+  + .bota_home_support_item {
+    margin-left: 40px;
+  }
+}
+.bota_home_support_item_more {
+  a {
+    user-select: none;
+    -webkit-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+    height: 32px;
+    border-radius: 2px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: inline-block;
+    background: transparent;
+    outline: none;
+    font-weight: 400;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px solid #252B3A;
+    color: #252B3A;
+
+    &:hover {
+      border-color: #0052CC;
+      color: #0052CC;
+    }
+  }
+
+  margin-top: 16px;
+}
+  .bota_home_support_item_icon {
+    margin-bottom: 15px;
+   img{
+      width: 34px;
+      height: 34px;
+      object-fit: scale-down;
+   }
+
+    .bota_home_support_item_title {
+      font-size: 16px;
+      line-height: 22px;
+      color: #252B3A;
+      font-weight: 700;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+  }
 }
