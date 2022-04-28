@@ -168,6 +168,10 @@
       }
       
       .bota_product_serice_img {
+        transition: transform .5s;
+        &:hover {
+          transform: translateX(-36px);
+      }
         @media (min-width: 60em){
           width: 973px;
           height: 547px;

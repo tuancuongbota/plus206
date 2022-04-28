@@ -189,7 +189,7 @@ ul {
   font-size: 14px;
   color: #fff;
   line-height: 40px;
-  margin-top: 16px;
+  margin-top: 0;
   -webkit-transition: .2s;
   transition: .2s;
   background: #0052CC;
@@ -206,16 +206,14 @@ ul {
 
 .bota_global_site_data {
   flex-wrap: wrap;
-  margin-top: 57px;
+  margin-top: 40px;
   display: flex;
 
   .bota_global_site_text {
     width: 50%;
-    margin: 32px 0;
+    margin: 25px 0;
 
     .title {
-      height: 60px;
-      line-height: 60px;
       font-size: 48px;
       color: #252B3A;
       overflow: hidden;
@@ -223,20 +221,21 @@ ul {
       white-space: nowrap;
       -webkit-transition: all .3s;
       transition: all .3s;
+      margin: 0;
+      line-height: 43px;
       &:hover{
         color: #0052CC;
       }
     }
 
     .desc {
-      height: 22px;
-      line-height: 22px;
-      font-size: 16px;
+      line-height: 24px;
+      font-size: 15px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       color: #575D6C;
-      margin-top: 8px;
+      margin-bottom: 0;
     }
   }
 }
@@ -245,15 +244,20 @@ ul {
   background: #fff;
   -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
-  height: 180px;
-  padding: 10px 55px;
+  padding: 20px 55px;
+  .bota_title_main {
+    margin-bottom: 39px;
+  
+    h2 {
+      margin-bottom: 0;
+    }
+  }
 
   .bota_safety_card_item {
     .bota_safety_card {
       display: block;
       width: 157px;
-      height: 160px;
-      padding-top: 16px;
+      padding-top: 0;
       -webkit-transition: .2s;
       transition: .2s;
       p {
@@ -282,7 +286,7 @@ ul {
   }
 }
 .bota_section_body_left{
-  height: 630px;
+  max-width: 680px;
 }
 .bota_home_support {
   padding: 94px 0 46px;

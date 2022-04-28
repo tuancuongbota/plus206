@@ -22,6 +22,7 @@
                 display: block;
                 padding: 7.5px 15px;
               }
+            
             .bota_header_language_ul {
                 right: 0;
                 margin: 0;
@@ -93,15 +94,20 @@
           flex-wrap: wrap;
       
           > li {
-            > a {
+            > a, > button {
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
               line-height: 18px;
-              color: #252B3A;
+              color: #252B3A !important;
               padding: 21px 0;
               display: block;
               position: relative;
+              border: none;
+              outline: none;
+              background: none !important;
+              box-shadow: unset !important;
+              
       
               &:after {
                 content: "";
@@ -116,15 +122,172 @@
                 visibility: hidden;
                 -webkit-transition: all 0.5s ease;
                 transition: all 0.5s ease;
+                border: none !important;
+                margin: 0;
+                vertical-align: unset;
+                display: unset;
               }
             }
       
             padding: 0 10px;
       
-            &:hover > a:after {
+            &:hover > a:after,&:hover > button:after {
               width: 100%;
               opacity: 1;
               visibility: visible;
+            }
+            .bota_menu_sub {
+              display: none;
+              width: 100%;
+              padding: 13px 0;
+              position: fixed !important;
+              -webkit-transform: unset !important;
+              transform: unset !important;
+              top: 91px !important;
+              pointer-events: all;
+              min-height: 526px;
+              transition: all .2s;
+              .bota_dropdown_product_item {
+                position: relative;
+                margin-bottom: 30px;
+                overflow: hidden;
+                .bota_dropdown_product_icon {
+                  width: 24px;
+                  height: 24px;
+                  float: left;
+                
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: scale-down;
+                  }
+                }
+                .bota_dropdown_product_content {
+                  float: left;
+                  width: calc(100% - 39px);
+                  margin-left: 15px;
+              }
+                
+                .bota_dropdown_product_title {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 20px;
+                  color: #252B3A;
+                  margin-bottom: 10px;
+                  a{
+                    color: #252B3A;
+                  }
+                }
+                
+                .bota_dropdown_product_desc {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #8A8E99;
+                  ul li a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    display: block;
+                    color: #8A8E99;
+                    margin-bottom: 5px;
+                    &:hover{
+                      color: #0052CC;
+                    }
+                  }
+                }
+              }
+              
+             
+              .bota_menu_commom_left{
+                border-right: 1px solid #D4DADD;
+                padding-right: 57px;
+                height: 100%;
+                padding-top: 36px;
+              }
+              .bota_menu_commom_center {
+                padding-top: 36px;
+                border-right: 1px solid #D4DADD;
+                padding-right: 57px;
+                height: 100%;
+                min-height: 499px;
+            }
+              .bota_menu_search {
+                margin-bottom: 25px;
+                position: relative;
+                max-width: 240px;
+              
+                input {
+                  border: none;
+                  border-bottom: 1px solid #D4DADD;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  padding-bottom: 11px;
+                  width: 100%;
+                  outline: none;
+                  &::placeholder{
+                    color: #ADB0B8;
+                  }
+                  &:focus{
+                    border-color: #000;
+                    svg{
+                      path{
+                        fill: #000;
+                      }
+                    }
+                  }
+                }
+              
+                button {
+                  border: none;
+                  background: none;
+                  position: absolute;
+                  right: 0;
+                }
+              }
+              
+              .bota_menu_commom_title {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #0052CC;
+              }
+              
+              .bota_menu_commom_desc {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #575D6C;
+                margin-bottom: 29px;
+                margin-top: 13px;
+              }
+              
+              .bota_menu_commom_left_wrapper {
+                a {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #0052CC;
+                }
+              
+                max-width: 240px;
+              }
+            }
+            &.dropdown{
+              &.show{
+                button:after{
+                  width: 100%;
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
             }
           }
         }

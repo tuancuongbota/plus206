@@ -39,10 +39,10 @@ $(document).ready(function() {
         infinite: true,
         speed: 300,
         arrows: false,
-        autoplay: false,
-        autoplaySpeed: 1000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToShow: 6,
-        slidesToScroll: 6,
+        slidesToScroll: 3,
         responsive: [
             {
                 breakpoint: 1024,
@@ -69,6 +69,9 @@ $(document).ready(function() {
             },
         ],
     });
+    $(document).on('click', '.allow-focus', function (e) {
+        e.stopPropagation();
+      });
     $(document).on('mouseenter', '[data-toggle="pill"]', function () {
         $(this).tab('show');
       });
